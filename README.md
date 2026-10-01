@@ -5,3 +5,6 @@ Otro texto.
 Este repositorio ha sido creado para almacenar los trabajos y actividades
 
 El objetivo de esta actividad es aprender GIT Y GITHAb
+
+Github es un repositorio que nos permite el trabajo colaborativo. 
+Att: Ronnie Tirira
