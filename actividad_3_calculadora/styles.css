@@ -1,0 +1,140 @@
+/* ============================================================
+   SECCIÓN 2: Estilos de la calculadora (styles.css)
+   Integrante: Jessenia Belén Cruz Rojas
+   Aquí se le da color y forma a la calculadora, a la pantalla
+   y a los botones.
+   ============================================================ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef1f7;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Enlace para regresar a la portada */
+.volver {
+    color: #1f3a5f;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+/* Caja principal de la calculadora */
+.calculadora {
+    background-color: #1f3a5f;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px #9aa5b8;
+    width: 320px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* La pantalla donde se ven los números */
+#pantalla {
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    font-size: 26px;
+    text-align: right;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    background-color: #f5f7fb;
+    color: #1f3a5f;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Los botones van en una grilla de 4 columnas */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.boton {
+    height: 55px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #1f3a5f;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px #14263f;
+}
+
+.boton:hover {
+    background-color: #d6e2f7;
+}
+
+/* Botones de operaciones (+ - × ÷) */
+.operador {
+    background-color: #2d6cdf;
+    color: #ffffff;
+}
+
+.operador:hover {
+    background-color: #1f55b8;
+}
+
+/* Botones C y borrar */
+.limpiar {
+    background-color: #e5a93d;
+    color: #1f3a5f;
+}
+
+.limpiar:hover {
+    background-color: #cf9328;
+}
+
+/* El botón igual ocupa 2 filas hacia abajo */
+.igual {
+    grid-row: span 2;
+    height: auto;
+    background-color: #2f9e6b;
+    color: #ffffff;
+}
+
+.igual:hover {
+    background-color: #25805a;
+}
+
+/* El cero ocupa 2 columnas */
+.cero {
+    grid-column: span 2;
+}
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 400px) {
+    .calculadora {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #pantalla {
+        font-size: 22px;
+    }
+
+    .boton {
+        height: 48px;
+        font-size: 18px;
+    }
+
+    /* El igual debe seguir ocupando las 2 filas */
+    .igual {
+        height: auto;
+    }
+}

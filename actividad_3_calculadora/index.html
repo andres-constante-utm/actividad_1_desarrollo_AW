@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         SECCIÓN 1: Estructura HTML y pantalla (index.html)
+         Integrante: Andrés Gonzalo Constante Murillo
+         Aquí está la estructura de la página, la pantalla (input)
+         y todos los botones con su onclick.
+         ============================================================ -->
+
+    <a href="../index.html" class="volver">← Volver al inicio</a>
+
+    <div class="calculadora">
+        <h1>Calculadora Web</h1>
+
+        <!-- La pantalla es un input de solo lectura, así no se puede escribir directo -->
+        <input type="text" id="pantalla" value="0" readonly>
+
+        <!-- Aquí van los botones, se llaman a las funciones de script.js con onclick -->
+        <div class="botones">
+            <button class="boton limpiar" onclick="limpiar()">C</button>
+            <button class="boton limpiar" onclick="borrarUltimo()">⌫</button>
+            <button class="boton operador" onclick="elegirOperacion('÷')">÷</button>
+            <button class="boton operador" onclick="elegirOperacion('×')">×</button>
+
+            <button class="boton" onclick="agregarNumero('7')">7</button>
+            <button class="boton" onclick="agregarNumero('8')">8</button>
+            <button class="boton" onclick="agregarNumero('9')">9</button>
+            <button class="boton operador" onclick="elegirOperacion('-')">−</button>
+
+            <button class="boton" onclick="agregarNumero('4')">4</button>
+            <button class="boton" onclick="agregarNumero('5')">5</button>
+            <button class="boton" onclick="agregarNumero('6')">6</button>
+            <button class="boton operador" onclick="elegirOperacion('+')">+</button>
+
+            <button class="boton" onclick="agregarNumero('1')">1</button>
+            <button class="boton" onclick="agregarNumero('2')">2</button>
+            <button class="boton" onclick="agregarNumero('3')">3</button>
+            <button class="boton igual" onclick="calcular()">=</button>
+
+            <button class="boton cero" onclick="agregarNumero('0')">0</button>
+            <button class="boton" onclick="agregarPunto()">.</button>
+        </div>
+    </div>
+
+    <!-- El script va al final del body para que la página ya esté cargada -->
+    <script src="script.js"></script>
+</body>
+</html>

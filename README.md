@@ -25,6 +25,7 @@ En esta materia aprendemos programación web en el cliente (HTML, CSS y JavaScri
 | N.º | Actividad | Carpeta | Descripción |
 |-----|-----------|---------|-------------|
 | 1 | Creación de repositorio en GitHub | [actividad_1_repositorio](actividad_1_repositorio/README.md) | Evidencia de los commits de cada integrante en el README. |
+| 3 | Calculadora web | [actividad_3_calculadora](actividad_3_calculadora/README.md) | Calculadora hecha solo con HTML, CSS y JavaScript. |
 
 > Esta tabla se irá actualizando con cada actividad nueva.
 
